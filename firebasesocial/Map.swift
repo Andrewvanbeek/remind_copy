@@ -182,8 +182,8 @@ class map: UIViewController, CLLocationManagerDelegate {
                 print(json)
                 if((json?.count)! >= 1){
                     let content = UNMutableNotificationContent()
-                    content.title = "Hey do that stuff"
-                    content.subtitle = "Check your map!!!"
+                    content.title = "Reminder: Something Near by"
+                    content.subtitle = "There is an item on your list currently near by"
                     content.body = "do it"
                     content.badge = 1
                     let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: false)
